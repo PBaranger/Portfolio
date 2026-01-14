@@ -8,7 +8,7 @@ Vous pouvez découvrir sur ce site mon parcours scolaire, les différents projet
 
 ## Exécution
 
-Pour exécuter le site web, il faut télécharger tous les fichiers puis *exécuter le fichier `index.html`.
+Pour exécuter le site web, il faut télécharger tous les fichiers puis exécuter le fichier `index.html`.
 
 
 ## Développeur
