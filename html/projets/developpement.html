@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -25,11 +25,15 @@
             <a href="../../html/projets.html">Projets</a>
             <ul>
               <li>
-                <a href="../../html/projets/developpement.html">Développement</a>
+                <a href="../../html/projets/developpement.html"
+                  >Développement</a
+                >
               </li>
               <li><a href="../../html/projets/reseaux.html">Réseau</a></li>
               <li>
-                <a href="../../html/projets/communication.html">Communication</a>
+                <a href="../../html/projets/communication.html"
+                  >Communication</a
+                >
               </li>
             </ul>
           </li>
@@ -37,7 +41,9 @@
             <a href="../../html/competences.html">Compétences</a>
             <ul>
               <li>
-                <a href="../../html/competences/informatique.html">Informatique</a>
+                <a href="../../html/competences/informatique.html"
+                  >Informatique</a
+                >
               </li>
               <li><a href="../../html/competences/general.html">Général</a></li>
             </ul>
@@ -50,6 +56,29 @@
     <!-- Contenu principal -->
 
     <main>
+      <!-- Barre fixe de navigation interne -->
+      <div class="sub-nav">
+        <a href="#section-page-web">Page Web</a>
+        <a href="#section-jeux">Jeux</a>
+        <a href="#section-application">Application</a>
+      </div>
+
+      <!-- Exemple de sections avec ancres -->
+      <section id="section-page-web">
+        <h2>Page Web</h2>
+        <!-- ton contenu déjà existant "Réalisation d’un site Web" -->
+      </section>
+
+      <section id="secti1on-jeux">
+        <h2>Jeux</h2>
+        <!-- ton contenu "jeu vidéo textuel" -->
+      </section>
+
+      <section id="section-application">
+        <h2>Application</h2>
+        <!-- appli astro, IHM, etc. -->
+      </section>
+
       <h1 class="titre-page">Développement d’application et programmation</h1>
 
       <div class="presentation-general">
@@ -62,13 +91,11 @@
       </div>
 
       <!-- ### Réalisation d’un site Web ### -->
-      <div class="projets1-development-content">
-        <div class="project1-development-gauche">
-          <h2 id="site-web-1" class="titre-page-page">
-            Réalisation d’un site Web
-          </h2>
+      <div class="projets-bloc-texte-img" id="site-web-1">
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">Réalisation d’un site Web</h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 J’ai réalisé ce projet dans le cadre d’une SAE (Situation
@@ -84,9 +111,9 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">HTML</a>
-              <a class="custom-button2" target="_blank">CSS</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">HTML</a>
+              <a class="bouton-language" target="_blank">CSS</a>
             </div>
           </div>
         </div>
@@ -99,14 +126,14 @@
 
           <div class="boutons-liens">
             <a
-              class="custom-button"
+              class="bouton-lien"
               href="https://projets.jrcan.dev/tourdumonde/index.html"
               target="_blank"
               >Site Web</a
             >
 
             <a
-              class="custom-button"
+              class="bouton-lien"
               href="https://github.com/PBaranger/TourDuMondeEn5Pas"
               target="_blank"
               >GitHub</a
@@ -118,7 +145,7 @@
       <hr />
 
       <!-- ### Réalisation d’un jeu vidéo textuel à choix ### -->
-      <div class="projets1-development-content">
+      <div class="projets-bloc-texte-img">
         <div class="img-et-bouton">
           <img
             class="projets1-text"
@@ -128,19 +155,19 @@
 
           <div class="boutons-liens">
             <a
-              class="custom-button"
+              class="bouton-lien"
               href="https://github.com/PBaranger/Jeu_video_en_C"
               target="_blank"
               >GitHub</a
             >
           </div>
         </div>
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">
             Réalisation d’un jeu vidéo textuel à choix
           </h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 L’objectif de ce projet, que j’ai réalisé durant une SAE par
@@ -158,8 +185,8 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">Language C</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">Language C</a>
             </div>
           </div>
         </div>
@@ -168,13 +195,13 @@
       <hr />
 
       <!-- ### Réalisation d’une application de traitement d’images astronomique ### -->
-      <div class="projets1-development-content">
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">
+      <div class="projets-bloc-texte-img">
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">
             Réalisation d’une application de traitement d’images astronomique
           </h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 Ce projet a été réalisé par binôme, dans le cadre d’une SAE.
@@ -197,8 +224,8 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">Python</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">Python</a>
             </div>
           </div>
         </div>
@@ -211,7 +238,7 @@
 
           <div class="boutons-liens">
             <a
-              class="custom-button"
+              class="bouton-lien"
               href="https://github.com/PBaranger/image_astro"
               target="_blank"
               >GitHub</a
@@ -223,7 +250,7 @@
       <hr />
 
       <!-- ### Optimisation de code ### -->
-      <div class="projets1-development-content">
+      <div class="projets-bloc-texte-img">
         <div class="img-et-bouton">
           <img
             class="projets1-text"
@@ -231,10 +258,10 @@
             alt="Interface de départ de l’application"
           />
         </div>
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">Optimisation de code</h2>
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">Optimisation de code</h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 J’ai réalisé ce projet dans le cadre d’une SAE, j’ai pu
@@ -244,8 +271,8 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">Python</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">Python</a>
             </div>
           </div>
         </div>
@@ -254,11 +281,11 @@
       <hr />
 
       <!-- ### Réalisation d’une application IHM ### -->
-      <div class="projets1-development-content">
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">Réalisation d’une application IHM</h2>
+      <div class="projets-bloc-texte-img">
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">Réalisation d’une application IHM</h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 Lors d’une SAE réalisée en groupe de quatre, l’objectif a été de
@@ -276,8 +303,8 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">Python</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">Python</a>
             </div>
           </div>
         </div>
@@ -290,7 +317,7 @@
 
           <div class="boutons-liens">
             <a
-              class="custom-button"
+              class="bouton-lien"
               href="gitlab.com/noemie_lignier/chachoumarket"
               target="_blank"
               >GitLab</a
@@ -302,7 +329,7 @@
       <hr />
 
       <!-- ### Requête de récupération de données ### -->
-      <div class="projets1-development-content">
+      <div class="projets-bloc-texte-img">
         <div class="img-et-bouton">
           <img
             class="projets1-text"
@@ -310,10 +337,10 @@
             alt="Extrait de code"
           />
         </div>
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">Requête de récupération de données</h2>
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">Requête de récupération de données</h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 Durant les cours, j’ai réalisé différentes requêtes permettant
@@ -334,9 +361,9 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">SQL</a>
-              <a class="custom-button2" target="_blank">PGSQL</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">SQL</a>
+              <a class="bouton-language" target="_blank">PGSQL</a>
             </div>
           </div>
         </div>
@@ -345,11 +372,11 @@
       <hr />
 
       <!-- ### Développement d’une interface en PHP ### -->
-      <div class="projets1-development-content">
-        <div class="project1-development-gauche">
-          <h2 class="titre-page-page">Développement d’une interface en PHP</h2>
+      <div class="projets-bloc-texte-img">
+        <div class="projets-bloc-text-titre-bouton">
+          <h2 class="titre-bloc">Développement d’une interface en PHP</h2>
 
-          <div class="project1-development-text">
+          <div class="projets-bloc-text-bouton">
             <ul>
               <li>
                 Durant ce projet, j’ai développé un site en PHP localement sur
@@ -368,9 +395,9 @@
               </li>
             </ul>
 
-            <div class="boutons-languages">
-              <a class="custom-button2" target="_blank">PHP</a>
-              <a class="custom-button2" target="_blank">SQL</a>
+            <div class="boutons-languages-bloc">
+              <a class="bouton-language" target="_blank">PHP</a>
+              <a class="bouton-language" target="_blank">SQL</a>
             </div>
           </div>
         </div>
