@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>E-CV - BARANGER Phoedora</title>
+    <link rel="icon" type="image/png" href="img/logo_pb_sans_fond.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <!-- Inclusion du header -->
-    <!--<iframe src="header.html"></iframe>-->
+    <a id="top"></a>
     <header>
       <div class="header-left">
         <img
@@ -50,7 +50,7 @@
     <!-- Contenu principal -->
 
     <main>
-      <h1>Bienvenue sur ma page</h1>
+      <h1>E-CV</h1>
 
       <div class="presentation-general">
         <p class="presentation-general-text">
@@ -78,12 +78,10 @@
 
       <!-- ### PARCOURS SCOLAIRE ### -->
 
-      <div class="parcours-scolaire">
-        <h2 class="parcours-scolaire-titre">Mon parcours scolaire</h2>
-      </div>
+      <h2 class="parcours-titre">Mon parcours scolaire</h2>
 
-      <div class="parcours-scolaire1">
-        <div class="parcours-scolaire-texte1">
+      <div class="parcours-bloc-text-img">
+        <div class="parcours-scolaire-texte-gauche">
           <strong
             ><p>2023 - 2026</p>
             <p>IUT du Littoral côte d’opale (62100 CALAIS)</p>
@@ -97,21 +95,21 @@
             ainsi qu'en base de données.
           </p>
           <img
-            class="parcours-scolaire-logo1"
+            class="parcours-scolaire-logo"
             src="img/logo_iut.jpg"
             alt="IUT de Calais"
           />
         </div>
-        <div class="parcours-scolaire-image-etablissement1">
+        <div class="parcours-scolaire-image-etablissement-droite">
           <img src="img/IUT_1.jpg" alt="IUT de Calais" />
         </div>
       </div>
 
-      <div class="parcours-scolaire1">
-        <div class="parcours-scolaire-image-etablissement2">
+      <div class="parcours-bloc-text-img">
+        <div class="parcours-scolaire-image-etablissement-droite">
           <img src="img/Lycee_1.png" alt="Prytanée National Militaire" />
         </div>
-        <div class="parcours-scolaire-texte2">
+        <div class="parcours-scolaire-texte-droite">
           <p><strong>2020 - 2023</strong></p>
 
           <p>
@@ -123,7 +121,7 @@
           </p>
           <p>Obtention du baccalauréat en 2023.</p>
           <img
-            class="parcours-scolaire-logo2"
+            class="parcours-scolaire-logo"
             src="img/logo_lycee.png"
             alt="Logo PNM"
           />
@@ -131,15 +129,18 @@
       </div>
 
       <br />
+      <br />
+      <br />
+      <br />
+
       <hr />
+
       <!-- ### EXPERIENCE PROFESSIONNELLE ### -->
 
-      <div class="parcours-scolaire">
-        <h2 class="parcours-scolaire-titre">Mes expériences porfessionnelle</h2>
-      </div>
+      <h2 class="parcours-titre">Mes expériences professionnelle</h2>
 
-      <div class="parcours-scolaire1">
-        <div class="parcours-scolaire-texte1">
+      <div class="parcours-bloc-text-img">
+        <div class="parcours-scolaire-texte-gauche">
           <strong
             ><p>2024 - 2026</p>
             <p>
@@ -153,23 +154,22 @@
             informatiques<br />• Manipulation réseaux<br />
             • Aide utilisateur
           </p>
-          <div class="parcours-scolaire-image-etablissement2">
-            <img
-              src="img/logo_CMCO_Vivalto_Sante.png"
-              alt="Logo CMCO Vivalto Santé"
-            />
-          </div>
+          <img
+            class="parcours-scolaire-image-etablissement-droite"
+            src="img/logo_CMCO_Vivalto_Sante.png"
+            alt="Logo CMCO Vivalto Santé"
+          />
         </div>
-        <div class="parcours-scolaire-image-etablissement1">
-          <img src="img/SMB_VS1.jpg" alt="" />
+        <div class="parcours-scolaire-image-etablissement-droite">
+          <img src="img/SMB_VS1.jpg" alt="CMCO" />
         </div>
       </div>
 
-      <div class="parcours-scolaire1">
-        <div class="parcours-scolaire-image-etablissement2">
+      <div class="parcours-bloc-text-img">
+        <div class="parcours-scolaire-image-etablissement-droite">
           <img src="img/CP_etablissement1.jpg" alt="IUT de Calais" />
         </div>
-        <div class="parcours-scolaire-texte2">
+        <div class="parcours-scolaire-texte-droite">
           <p><strong>2020</strong></p>
 
           <p>
@@ -181,12 +181,40 @@
             informatiques<br />• Aide aux particuliers
           </p>
           <img
-            class="parcours-scolaire-logo2"
+            class="parcours-scolaire-logo"
             src="img/logo_CP1.jpg"
             alt="IUT de Calais"
           />
         </div>
       </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <hr />
+
+      <h2 class="parcours-titre">Mon CV</h2>
+
+      <br />
+
+      <iframe
+        class="cv_index"
+        src="doc\cv_baranger_phoedora.pdf"
+        width="570"
+        height="820"
+        style="border: 1px solid #ccc"
+      >
+      </iframe>
+      <br />
+
+      <a
+        class="cv_index_telecharger"
+        href="doc\cv_baranger_phoedora.pdf"
+        download
+        >Télécharger le CV</a
+      >
     </main>
 
     <footer>
@@ -245,5 +273,6 @@
         <a href="mentions_legales.html">Mentions légales</a>
       </div>
     </footer>
+    <a href="#top" class="back-to-top">↑</a>
   </body>
 </html>
