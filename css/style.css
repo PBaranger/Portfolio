@@ -10,7 +10,7 @@ body {
 
 main {
   padding: 40px 20px;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 
 }
 
@@ -46,9 +46,16 @@ hr {
   text-align: left;
 }
 
+.parcours-scolaire-image-etablissement-gauche img {
+  max-width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 .parcours-scolaire-image-etablissement-droite {
   width: 35%;
   text-align: right;
+  
 }
 
 .parcours-scolaire-image-etablissement-droite img {
@@ -452,7 +459,7 @@ svg {
   background: white;
   padding: 25px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 55%;
   text-align: center;
   position: relative;
 }
@@ -466,13 +473,13 @@ svg {
 }
 
 .modal-row {
-  display: flex;
+  /* display: flex; */
   align-items: center; /* aligne verticalement */
   gap: 10px; /* espace entre texte et bouton */
 }
 
 .modal-text {
-  margin: 0;
+  margin: 10px;
 }
 
 /* Optionnel : styliser le bouton proprement */

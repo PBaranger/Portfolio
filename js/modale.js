@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ##### AVEC BOUTON
         html1: {
-            title: "HTML",
+            title: "HTML/CSS",
             // info: `
             // J'ai pu développer plusieurs sites web en utilisant le HTML ainsi que le CSS pour créer mes pages web.
             //     J'ai développé un site simple à l'aide de HTML et CSS pour présenter un tour du monde en 5 pas.
@@ -26,8 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
             info: `
                 <div class="modal-row">
                     <p class="modal-text">
-                        J'ai pu développer plusieurs sites web en utilisant le HTML ainsi que le CSS pour créer mes pages web.
+                        J'ai pu développer plusieurs sites web en utilisant le HTML ainsi que le CSS pour créer ces pages.
+                        <br />
                         J'ai développé un site simple à l'aide de HTML et CSS pour présenter un tour du monde en 5 pas.
+                        <br />
+                        Ce projet qui à été réalisé en début d'année m'a permis de découvrir le développement web et de comprendre comment structurer une page web de manière efficace.
                     </p>
                     <button class="modal-btn" onclick="window.location.href='../../html/projets/developpement.html#site-web-1'">
                         Voir le Projet
@@ -36,6 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
             <br />
             <hr />
             <br />
+            <div class="modal-row">
+                    <p class="modal-text">
+                        J'ai pu développer plusieurs sites web en utilisant le HTML ainsi que le CSS pour créer mes pages web.
+                        <br />
+                        J'ai développé un site simple à l'aide de HTML et CSS pour présenter un tour du monde en 5 pas.
+                    </p>
+                    <button class="modal-btn" onclick="window.location.href='../../html/projets/developpement.html#site-web-1'">
+                        Voir le Projet
+                    </button>
+                </div>
             `
         },
 
