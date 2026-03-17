@@ -6,7 +6,7 @@ Le Portfolio est un site web qui contient toutes les informations importantes su
 Vous pouvez découvrir sur ce site mon parcours scolaire, les différents projets que j'ai pu réaliser durant mes 3 ans de BUT Informatique ainsi que ceux réalisés dans mon entreprise.
 
 
-## Exécution
+## Visualiser le projet
 
 Pour exécuter le site web, il faut télécharger tous les fichiers puis exécuter le fichier `index.html` ou cliquer sur mon [portfolio](portfolio.baranger.free.fr)
 
