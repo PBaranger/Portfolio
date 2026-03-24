@@ -6,6 +6,9 @@ body {
   padding: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #fbfaf7;
+  /* scroll-padding-top: 80px; */
+  line-height: 1.4;
+
 }
 
 main {
@@ -17,28 +20,51 @@ main {
 hr {
   height: 1px;
   border: none;
-  background-color: #a7a7a7;
-  width: 40%;
+  background: linear-gradient(90deg, transparent, #839444, transparent);
+  width: 50%;
+  margin: 4rem auto;
 }
 
 /* ############ INDEX.HTML ############  -> OK*/
 /* ############ STYLE PAGE PARCOURS SCOLAIRE ############ */
 .parcours-titre {
   text-align: center;
+  font-size: 2rem;
+  position: relative;
+  /* font-weight: 700; */
+  margin-bottom: 3rem;
+  color: #2c3e50;
 }
+
+.parcours-titre::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #839444, #4a7c2a);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
 .parcours-bloc-text-img {
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 26px;
   margin: 20px auto;
-  max-width: 90%;
+  max-width: 1200px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
+  animation: fadeInUp 0.8s ease forwards;
+  background: white;
+  gap: 40px;
 }
 
 .parcours-scolaire-texte-gauche {
   width: 60%;
+}
+.parcours-scolaire-texte-gauche strong {
+color: #7f9239;
 }
 
 .parcours-scolaire-image-etablissement-gauche {
@@ -77,6 +103,9 @@ hr {
   width: 60%;
   text-align: right;
 }
+.parcours-scolaire-texte-droite strong {
+  color: #7f9239;
+}
 .parcours-scolaire-texte-droite p {
   margin: 5px 0;
 }
@@ -96,7 +125,7 @@ hr {
 
 
 /* ### STYLE DU HEADER ### */
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,15 +133,34 @@ header {
   color: white;
   padding: 15px 30px;
   font-family: "Segoe UI", sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
 
   /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000; */
+/* } */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #839444;
+  color: white;
+  /* padding: 15px 30px; */
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  padding: 1rem 5%;
+  transition: all 0.3s ease;
 }
 
+h1{
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 2.5rem;
+}
 
 /* Partie gauche : logo + nom */
 .header-left {
@@ -151,7 +199,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #3a3a5c;
+  /* background-color: #3a3a5c; */
+  background: rgba(255,255,255,0.2);
+
   border-radius: 5px;
 }
 
@@ -190,7 +240,7 @@ nav ul li ul li a:hover {
 .sub-nav {
   position: sticky;      /* reste collée en haut lors du scroll */
   top: 0;                /* position à 0 par rapport au haut de la fenêtre */
-  z-index: 900;         
+  z-index: 900;
   background-color: #fbfaf7;
   border-bottom: 1px solid #ddd;
   /* padding: 10px 40px; */
@@ -249,6 +299,13 @@ nav ul li ul li a:hover {
   justify-content: space-between;
   gap: 40px;
   font-size: 18px;
+  animation: fadeInUp 0.8s ease forwards;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 26px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
 }
 
 .presentation-general-text {
@@ -284,8 +341,18 @@ nav ul li ul li a:hover {
   width: fit-content;
   margin: 0 auto;
   text-decoration: none;
+  background: linear-gradient(135deg, #839444, #4a7c2a);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(131,148,68,0.3);
+  transition: all 0.3s ease;
+  padding: 10px 30px;
 }
 
+.cv_index_telecharger:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(131,148,68,0.4);
+}
 
 
 /* ### STYLE PAGE PROJETS DEVELOPEMENT ### */
@@ -296,7 +363,7 @@ nav ul li ul li a:hover {
   align-items: flex-start; /* Alignement en haut */
   justify-content: space-between; /* Espace entre texte et image */
   gap: 40px; /* Espace entre texte et image */
-  padding: 20px;
+  padding: 26px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 40px 90px;
@@ -610,7 +677,7 @@ footer {
   /* background: linear-gradient(to top, #d7ffd7, #fbfaf7); */
   background-color: #839444;
   color: white;
-  padding: 20px 40px;
+  padding: 26px 40px;
   margin-top: auto;
 }
 
