@@ -8,7 +8,7 @@ Vous pouvez découvrir sur ce site mon parcours scolaire, les différents projet
 
 ## Visualiser le projet
 
-Pour exécuter le site web, il faut télécharger tous les fichiers puis exécuter le fichier `index.html` ou cliquer sur mon [portfolio](<http://portfolio.baranger.free.fr>){:target="_blank"}
+Pour exécuter le site web, il faut télécharger tous les fichiers puis exécuter le fichier `index.html` ou cliquer sur mon [portfolio](<http://portfolio.baranger.free.fr>)
 
 
 ## Développeur
