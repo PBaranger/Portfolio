@@ -1,5 +1,7 @@
 A faire :
 
+-> Mettre à jour le css pour la taille et couleur des blocs pour les compétences
+
 -> mettre en anglais :
   -> Créer les fichier et tout traduire
 
