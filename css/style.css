@@ -364,9 +364,13 @@ nav ul li ul li a:hover {
   justify-content: space-between; /* Espace entre texte et image */
   gap: 40px; /* Espace entre texte et image */
   padding: 26px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 40px 90px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 50px;
+  animation: fadeInUp 0.8s ease forwards;
+  background: white;
 
 }
 
@@ -380,6 +384,8 @@ nav ul li ul li a:hover {
 .titre-bloc {
   margin-left: 28%;
   font-weight: 600;
+  color: #7f9239;
+  margin-right: 90px;
 }
 
 .projets-bloc-texte-img ul {
