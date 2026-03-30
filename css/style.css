@@ -25,6 +25,10 @@ hr {
   margin: 4rem auto;
 }
 
+.icon-drapeau {
+  wight: 20px;
+}
+
 /* ############ INDEX.HTML ############  -> OK*/
 /* ############ STYLE PAGE PARCOURS SCOLAIRE ############ */
 .parcours-titre {
