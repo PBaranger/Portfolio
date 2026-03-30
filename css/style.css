@@ -350,7 +350,7 @@ nav ul li ul li a:hover {
 }
 
 .cv_index_telecharger:hover {
-  transform: translateY(-1px) scale(1.00);
+  transform: translateY(-1px) scale(1.02);
   box-shadow: 0 10px 20px rgba(131,148,68,0.4);
 }
 
