@@ -52,7 +52,7 @@ hr {
   border-radius: 15px;
   padding: 26px;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 78%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   animation: fadeInUp 0.8s ease forwards;
@@ -367,7 +367,7 @@ nav ul li ul li a:hover {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 78%;
   margin-top: 50px;
   animation: fadeInUp 0.8s ease forwards;
   background: white;
