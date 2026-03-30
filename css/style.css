@@ -341,16 +341,16 @@ nav ul li ul li a:hover {
   width: fit-content;
   margin: 0 auto;
   text-decoration: none;
-  background: linear-gradient(135deg, #839444, #4a7c2a);
+  background: #839444;
   color: white;
   border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(131,148,68,0.3);
+  box-shadow: 0 5px 15px rgba(131,148,68,0.3);
   transition: all 0.3s ease;
   padding: 10px 30px;
 }
 
 .cv_index_telecharger:hover {
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-1px) scale(1.05);
   box-shadow: 0 20px 40px rgba(131,148,68,0.4);
 }
 
