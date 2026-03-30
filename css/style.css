@@ -183,6 +183,23 @@ h1{
   margin: 0;
 }
 
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon-drapeau img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-drapeau img:hover {
+  transform: scale(1.1);
+}
+
 /* Navigation principale */
 nav ul {
   list-style: none;
