@@ -377,6 +377,68 @@ nav ul li ul li a:hover {
 }
 
 
+
+.titre-projets {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #7f9239;
+}
+
+/* Conteneur des 3 blocs */
+.projets-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+/* Carte individuelle */
+.projet-card {
+  background: white;
+  width: calc(33.333% - 20px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.projet-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.projet-card p {
+  text-align: justify;
+  font-size: 15.5px;
+}
+
+/* Bouton */
+.btn-projet {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-projet:hover {
+  background: #2e2e2e;
+  transform: translateY(-3px) scale(1.05);
+}
+
+
+
 /* ### STYLE PAGE PROJETS DEVELOPEMENT ### */
 .projets-bloc-texte-img {
   display: flex;
