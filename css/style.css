@@ -392,7 +392,7 @@ nav ul li ul li a:hover {
   justify-content: space-between;
   align-items: stretch;
   gap: 30px;
-  max-width: 1200px;
+  max-width: 78%;
   margin: 40px auto;
 }
 
@@ -435,7 +435,7 @@ nav ul li ul li a:hover {
 
 .btn-projet:hover {
   background: #2e2e2e;
-  transform: translateY(-3px) scale(1.05);
+  transform: translateY(-3px) scale(1.02);
 }
 
 
