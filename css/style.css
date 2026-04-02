@@ -819,6 +819,12 @@ footer {
 
 .form-group {
   margin-bottom: 1.8rem;
+  flex:1;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
 }
 
 .form-group label {
