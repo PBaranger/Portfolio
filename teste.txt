@@ -7,4 +7,6 @@ A faire :
 
 -> Continuer de faire les compétences
 
--> Vérifier l'agancement des img + agancement global
+~~ -> Vérifier l'agancement des img + agancement global ~~
+
+-> Page contact -> OK // -> ajouter mon contact perso
