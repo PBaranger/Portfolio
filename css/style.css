@@ -25,18 +25,170 @@ hr {
   margin: 4rem auto;
 }
 
-.icon-drapeau {
-  width: 20px;
-  height: 20px;
+h1{
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 2.5rem;
 }
 
-/* ############ INDEX.HTML ############  -> OK*/
+
+/* ### STYLE DU HEADER ### */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #839444;
+  color: white;
+  padding: 12px 5%;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Partie gauche : logo + nom */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo_header {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.header-left h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Partie gauche : menu + langue */
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon-drapeau img {
+  width: 28px;
+  /* height: 28px; */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: 6px;
+}
+
+.icon-drapeau img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation principale */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+/* Sous-menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #2c2c44;
+  border-radius: 5px;
+  flex-direction: column;
+  min-width: 160px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li:hover ul {
+  display: flex;
+}
+
+nav ul li ul li a {
+  color: white;
+  border-bottom: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  background-color: #444466;
+}
+
+
+/* ### STYLE DU FOOTER ### */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #839444;
+  color: white;
+  padding: 26px 40px;
+  margin-top: auto;
+}
+
+.footer-right {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px) scale(1.3);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+
+/* ############ INDEX.HTML ############ */
 /* ############ STYLE PAGE PARCOURS SCOLAIRE ############ */
 .parcours-titre {
   text-align: center;
   font-size: 2rem;
   position: relative;
-  /* font-weight: 700; */
   margin-bottom: 3rem;
   color: #2c3e50;
 }
@@ -77,6 +229,17 @@ color: #7f9239;
   text-align: left;
 }
 
+.parcours-scolaire-texte-droite {
+  width: 60%;
+  text-align: right;
+}
+.parcours-scolaire-texte-droite strong {
+  color: #7f9239;
+}
+.parcours-scolaire-texte-droite p {
+  margin: 5px 0;
+}
+
 .parcours-scolaire-image-etablissement-gauche img {
   max-width: 70%;
   border-radius: 8px;
@@ -85,8 +248,7 @@ color: #7f9239;
 
 .parcours-scolaire-image-etablissement-droite {
   width: 35%;
-  text-align: right;
-  
+  text-align: right; 
 }
 
 .parcours-scolaire-image-etablissement-droite img {
@@ -104,213 +266,29 @@ color: #7f9239;
   border: 0.5px solid #ffffff;
 }
 
-.parcours-scolaire-texte-droite {
-  width: 60%;
-  text-align: right;
-}
-.parcours-scolaire-texte-droite strong {
-  color: #7f9239;
-}
-.parcours-scolaire-texte-droite p {
-  margin: 5px 0;
-}
-
-
-
-/* ### STYLE DES MENTIONS LEGALES ### */
-.mentions_legales h1 {
-  text-align: center;
-}
-
-.mentions_legales p {
-  text-align: justify;
-  margin: 0px 200px;
-}
-
-
-
-/* ### STYLE DU HEADER ### */
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #839444;
-  color: white;
-  padding: 15px 30px;
-  font-family: "Segoe UI", sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
-
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; */
-/* } */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #839444;
-  color: white;
-  /* padding: 15px 30px; */
-  font-family: "Segoe UI", sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-
-  padding: 1rem 5%;
-  transition: all 0.3s ease;
-}
-
-h1{
-  text-align: center;
-  margin-bottom: 75px;
-  font-size: 2.5rem;
-}
-
-/* Partie gauche : logo + nom */
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo_header {
-  height: 60px;
-  margin-right: 15px;
-}
-
-.header-left h3 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.header-right {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.icon-drapeau img {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.icon-drapeau img:hover {
-  transform: scale(1.1);
-}
-
-/* Navigation principale */
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  /* gap: 25px; */
-}
-
-nav ul li {
-  position: relative;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 12px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  /* background-color: #3a3a5c; */
-  background: rgba(255,255,255,0.2);
-
-  border-radius: 5px;
-}
-
-/* Sous-menu */
-nav ul li ul {
-  display: none;
-  position: absolute;
-  top: 120%;
-  left: 0;
-  background-color: #2c2c44;
-  border-radius: 5px;
-  flex-direction: column;
-  min-width: 160px;
-  /* padding: 10px 0; */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-nav ul li:hover ul {
-  display: flex;
-}
-
-nav ul li ul li a {
-  /* padding: 10px; */
-  color: white;
-  border-bottom: 1px solid #444;
+.cv_index {
   display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
 }
 
-nav ul li ul li a:hover {
-  background-color: #444466;
-}
-
-/*###################################################################*/
-
-
-.sub-nav {
-  position: sticky;      /* reste collée en haut lors du scroll */
-  top: 0;                /* position à 0 par rapport au haut de la fenêtre */
-  z-index: 900;
-  background-color: #fbfaf7;
-  border-bottom: 1px solid #ddd;
-  /* padding: 10px 40px; */
-  display: flex;
-  gap: 20px;
-  /* font-size: 0.95rem; */
-  justify-content: center;
-  text-align: center;
-}
-
-.sub-nav a {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
-
-
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-} */
-
-/* .sub-nav {
-  top: 80px;
-} */
- 
-
-/* Style des liens de la barre */
-.sub-nav a {
+.cv_index_telecharger {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   text-decoration: none;
-  color: #21759b;
-  font-weight: 500;
-  padding: 6px 10px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  background: #839444;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(131,148,68,0.3);
+  transition: all 0.3s ease;
+  padding: 10px 30px;
 }
 
-.sub-nav a:hover {
-  background-color: #21759b;
-  color: #ffffff;
+.cv_index_telecharger:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(131,148,68,0.4);
 }
-
-
-
 
 
 /* ### STYLE PAGE ACCUEIL PRESENTATION ### */
@@ -345,38 +323,12 @@ nav ul li ul li a:hover {
   text-align: justify;
   margin: 10px 200px 60px 200px;
 }
+
 .titre-page {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 600;
 }
-
-
-.cv_index {
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-}
-
-.cv_index_telecharger {
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  text-decoration: none;
-  background: #839444;
-  color: white;
-  border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(131,148,68,0.3);
-  transition: all 0.3s ease;
-  padding: 10px 30px;
-}
-
-.cv_index_telecharger:hover {
-  transform: translateY(-1px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(131,148,68,0.4);
-}
-
-
 
 .titre-projets {
   text-align: center;
@@ -417,7 +369,6 @@ nav ul li ul li a:hover {
 
 .projet-card p {
   text-align: justify;
-  /*font-size: 15.5px;*/
   flex-grow : 1;
 }
 
@@ -440,14 +391,25 @@ nav ul li ul li a:hover {
 
 
 
-/* ### STYLE PAGE PROJETS DEVELOPEMENT ### */
+/* ### STYLE DES MENTIONS LEGALES ### */
+.mentions_legales h1 {
+  text-align: center;
+}
+
+.mentions_legales p {
+  text-align: justify;
+  margin: 0px 200px;
+}
+
+
+
+/* ### STYLE PAGES PROJETS ### */
 .projets-bloc-texte-img {
   display: flex;
-  /*align-items: center;  Verticalement centré */
   text-align: justify;
-  align-items: flex-start; /* Alignement en haut */
-  justify-content: space-between; /* Espace entre texte et image */
-  gap: 40px; /* Espace entre texte et image */
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
   padding: 26px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -474,23 +436,23 @@ nav ul li ul li a:hover {
 }
 
 .projets-bloc-texte-img ul {
-  flex: 1; /* Le texte occupe le plus d’espace */
+  flex: 1;
   margin-right: 50px;
   font-size: 16.3px;
 }
 
 .projets-bloc-texte-img img {
-  max-width: 350px; /* Adapter selon la taille souhaitée */
+  max-width: 350px;
   height: auto;
-  border-radius: 8px; /* Optionnel : coins arrondis */
+  border-radius: 8px;
   box-shadow: 0 0.2px 6px rgba(0, 0, 0, 0.09);
 }
 
 .img-et-bouton {
   display: flex;
-  flex-direction: column; /* Met tout en colonne verticale */
-  align-items: center; /* Centre l’image et les boutons horizontalement */
-  gap: 20px; /* Espacement entre l’image et les boutons */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .boutons-liens {
@@ -516,29 +478,22 @@ nav ul li ul li a:hover {
 }
 
 .boutons-languages-bloc {
-  margin-top: 18px; /* Espace entre la liste et les boutons */
+  margin-top: 18px;
   display: flex;
-  gap: 18px; /* Espace entre les deux boutons */
-  justify-content: center; /* Centre les boutons horizontalement */
+  gap: 18px;
+  justify-content: center;
 }
 
 
 .bouton-language {
-  /* background: #21759b; */
   background: transparent;
   color: #1b6b90;
   padding: 6px 11px;
   border-radius: 6px;
   text-decoration: none;
-  border: 2px solid #21759b; /* contour bleu */
+  border: 2px solid #21759b;
   box-shadow: 0 2px 8px rgba(33, 117, 155, 0.14);
-  /* transition: background 0.3s, transform 0.18s; */
 }
-
-/* .bouton-language:hover {
-  background: #175173;
-  transform: scale(1.07);
-} */
 
 section {
   margin: 50px auto;
@@ -549,14 +504,12 @@ section {
 .titre-page-competences {
   text-align: center;
   margin-bottom: 35px;
-  /* font-weight: 600; */
 }
 
 .skills-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* gap: 20px; */
 }
 
 .skill-card {
@@ -590,7 +543,6 @@ svg {
 .bar {
   background-color: #dcdde1;
   overflow: hidden;
-  /* margin-top: 10px;  */
   height: 15px;
   text-align: center;
   color: white;
@@ -599,16 +551,16 @@ svg {
   padding-right: 5px;
 }
 
+/* ### POUR LE JAVASCRIPT ### */
 .modal {
-  display: none; /* cachée par défaut */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* fond semi-transparent */
-  /* display: flex; */
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -631,16 +583,14 @@ svg {
 }
 
 .modal-row {
-  /* display: flex; */
-  align-items: center; /* aligne verticalement */
-  gap: 10px; /* espace entre texte et bouton */
+  align-items: center;
+  gap: 10px;
 }
 
 .modal-text {
   margin: 10px;
 }
 
-/* Optionnel : styliser le bouton proprement */
 .modal-btn {
   cursor: pointer;
   padding: 6px 12px;
@@ -648,7 +598,7 @@ svg {
   background-color: #3498db;
   color: white;
   border-radius: 5px;
-  white-space: nowrap; /* évite le retour à la ligne du texte du bouton */
+  white-space: nowrap;
 }
 
 .icon-skill svg {
@@ -742,7 +692,7 @@ svg {
 
   background: transparent;
   color: rgb(46, 46, 46);
-  border: 2px solid #21759b; /* contour bleu */
+  border: 2px solid #21759b;
 }
 
 .projet-button:hover {
@@ -750,64 +700,9 @@ svg {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ### STYLE DU FOOTER ### */
-/* footer { */
-/* background-color: #d7ffd7; */
-/* color: white; */
-/* padding: 20px 40px; */
-/* margin-top: auto; */
-/* } */
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-footer {
-  /* background: linear-gradient(to top, #d7ffd7, #fbfaf7); */
-  background-color: #839444;
-  color: white;
-  padding: 26px 40px;
-  margin-top: auto;
-}
-
-.social-links {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-right {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.social-links a:hover {
-  transform: translateY(-2px) scale(1.3);
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-/* BROUILLON #########################################################*/
+/* ### FORMULAIRE DE CONTACT ### */
 .contact-form {
   max-width: 700px;
   margin: 2rem auto;
@@ -879,15 +774,13 @@ footer {
   box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
 }
 
-/* Animations et effets hover */
 .form-group input:hover,
 .form-group textarea:hover {
   border-color: #bdc3c7;
 }
 
-
 html {
-  scroll-behavior: smooth;  /* scroll fluide */
+  scroll-behavior: smooth;
 }
 
 .back-to-top {
@@ -897,7 +790,7 @@ html {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #839444;   /* même couleur que ton header */
+  background-color: #839444;
   color: #fff;
   display: flex;
   align-items: center;
@@ -914,4 +807,43 @@ html {
 .back-to-top:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+
+
+
+/*###################################################################*/
+.sub-nav {
+  position: sticky;      /* reste collée en haut lors du scroll */
+  top: 0;                /* position à 0 par rapport au haut de la fenêtre */
+  z-index: 900;
+  background-color: #fbfaf7;
+  border-bottom: 1px solid #ddd;
+  /* padding: 10px 40px; */
+  display: flex;
+  gap: 20px;
+  /* font-size: 0.95rem; */
+  justify-content: center;
+  text-align: center;
+}
+
+.sub-nav a {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/* Style des liens de la barre */
+.sub-nav a {
+  text-decoration: none;
+  color: #21759b;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sub-nav a:hover {
+  background-color: #21759b;
+  color: #ffffff;
 }
