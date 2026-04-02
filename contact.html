@@ -147,5 +147,39 @@
       </div>
     </footer>
     <a href="#top" class="back-to-top">↑</a>
+
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+	(function() {
+		emailjs.init("4vl85eClIkiojkt2q");
+	})();
+
+	function sendMail(event) {
+		event.preventDefault();
+
+		const params = {
+			name: document.getElementById("name").value,
+			firstname: document.getElementById("firstname").value,
+			email: document.getElementById("email").value,
+			subject: document.getElementById("subject").value,
+			message: document.getElementById("message").value
+		};
+
+		emailjs.send("service_591h7rq", "template_i20az6v", params)
+			.then(() => {
+				alert("Message envoyé !");
+				
+			})
+			.catch((error) => {
+				alert("Erreur : " + JSON.stringify(error));
+			});
+	}
+</script>
+
+
+<form class="contact-form" onsubmit="sendMail(event)">
+
+
+    
   </body>
 </html>
