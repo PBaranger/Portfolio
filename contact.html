@@ -172,10 +172,11 @@ function sendMail(event) {
     emailjs.send("service_591h7rq", "template_i20az6v", params)
         .then(() => {
             alert("Votre message a bien été envoyé !");
+			document.querySelector(".contact-form").reset();
+
         })
         .catch((error) => {
             alert("Erreur : " + JSON.stringify(error));
-			document.querySelector(".contact-form").reset();
         });
 }
 </script>
