@@ -8,13 +8,11 @@ body {
   background-color: #fbfaf7;
   /* scroll-padding-top: 80px; */
   line-height: 1.4;
-
 }
 
 main {
   padding: 40px 20px;
   /* margin-top: 5%; */
-
 }
 
 hr {
@@ -25,12 +23,21 @@ hr {
   margin: 4rem auto;
 }
 
-h1{
+h1 {
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   font-size: 2.5rem;
 }
 
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #839444b0, #4a7c2a91);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
 
 /* ### STYLE DU HEADER ### */
 header {
@@ -101,7 +108,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
@@ -132,7 +139,6 @@ nav ul li ul li a:hover {
   background-color: #444466;
 }
 
-
 /* ### STYLE DU FOOTER ### */
 .footer-content {
   display: flex;
@@ -145,6 +151,11 @@ footer {
   color: white;
   padding: 26px 40px;
   margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .footer-right {
@@ -169,7 +180,9 @@ footer {
   font-weight: 500;
   padding: 8px 12px;
   border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .social-links a:hover {
@@ -182,7 +195,6 @@ footer {
   fill: currentColor;
 }
 
-
 /* ############ INDEX.HTML ############ */
 /* ############ STYLE PAGE PARCOURS SCOLAIRE ############ */
 .parcours-titre {
@@ -194,7 +206,7 @@ footer {
 }
 
 .parcours-titre::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 2px;
@@ -221,7 +233,7 @@ footer {
   width: 60%;
 }
 .parcours-scolaire-texte-gauche strong {
-color: #7f9239;
+  color: #7f9239;
 }
 
 .parcours-scolaire-image-etablissement-gauche {
@@ -236,9 +248,6 @@ color: #7f9239;
 .parcours-scolaire-texte-droite strong {
   color: #7f9239;
 }
-.parcours-scolaire-texte-droite p {
-  margin: 5px 0;
-}
 
 .parcours-scolaire-image-etablissement-gauche img {
   max-width: 70%;
@@ -248,7 +257,7 @@ color: #7f9239;
 
 .parcours-scolaire-image-etablissement-droite {
   width: 35%;
-  text-align: right; 
+  text-align: right;
 }
 
 .parcours-scolaire-image-etablissement-droite img {
@@ -280,16 +289,15 @@ color: #7f9239;
   background: #839444;
   color: white;
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(131,148,68,0.3);
+  box-shadow: 0 5px 15px rgba(131, 148, 68, 0.3);
   transition: all 0.3s ease;
   padding: 10px 30px;
 }
 
 .cv_index_telecharger:hover {
   transform: translateY(-1px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(131,148,68,0.4);
+  box-shadow: 0 10px 20px rgba(131, 148, 68, 0.4);
 }
-
 
 /* ### STYLE PAGE ACCUEIL PRESENTATION ### */
 .presentation-general {
@@ -354,7 +362,7 @@ color: #7f9239;
   background: white;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -369,7 +377,7 @@ color: #7f9239;
 
 .projet-card p {
   text-align: justify;
-  flex-grow : 1;
+  flex-grow: 1;
 }
 
 /* Bouton */
@@ -389,19 +397,12 @@ color: #7f9239;
   transform: translateY(-3px) scale(1.02);
 }
 
-
-
 /* ### STYLE DES MENTIONS LEGALES ### */
-.mentions_legales h1 {
-  text-align: center;
-}
 
 .mentions_legales p {
   text-align: justify;
   margin: 0px 200px;
 }
-
-
 
 /* ### STYLE PAGES PROJETS ### */
 .projets-bloc-texte-img {
@@ -418,7 +419,6 @@ color: #7f9239;
   margin-top: 50px;
   animation: fadeInUp 0.8s ease forwards;
   background: white;
-
 }
 
 .projets-bloc-text-titre-bouton {
@@ -468,7 +468,10 @@ color: #7f9239;
   border-radius: 8px;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.2s,
+    box-shadow 0.3s;
   margin-bottom: 6px;
 }
 
@@ -483,7 +486,6 @@ color: #7f9239;
   gap: 18px;
   justify-content: center;
 }
-
 
 .bouton-language {
   background: transparent;
@@ -700,9 +702,43 @@ svg {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-
-
 /* ### FORMULAIRE DE CONTACT ### */
+.contact-info {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #ffffff;;
+  border-left: 5px solid #7f9239;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #2c3e50;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #34495e;
+}
+
+.contact-info a {
+  color: #718527;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 .contact-form {
   max-width: 700px;
   margin: 2rem auto;
@@ -714,7 +750,7 @@ svg {
 
 .form-group {
   margin-bottom: 1.8rem;
-  flex:1;
+  flex: 1;
 }
 
 .form-row {
@@ -745,7 +781,7 @@ svg {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #7f9239;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
@@ -759,7 +795,7 @@ svg {
   display: block;
   width: 100%;
   padding: 1rem;
-  background: #3498db;
+  background: #7f9239;
   color: white;
   border: none;
   border-radius: 8px;
@@ -770,7 +806,7 @@ svg {
 }
 
 .btn-submit:hover {
-  background: #2980b9;
+  background: #798c33;
   box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
 }
 
@@ -797,11 +833,13 @@ html {
   justify-content: center;
   text-decoration: none;
   font-size: 24px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   z-index: 1001;
   opacity: 0.7;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
 }
 
 .back-to-top:hover {
@@ -809,13 +847,10 @@ html {
   transform: scale(1.05);
 }
 
-
-
-
 /*###################################################################*/
 .sub-nav {
-  position: sticky;      /* reste collée en haut lors du scroll */
-  top: 0;                /* position à 0 par rapport au haut de la fenêtre */
+  position: sticky; /* reste collée en haut lors du scroll */
+  top: 0; /* position à 0 par rapport au haut de la fenêtre */
   z-index: 900;
   background-color: #fbfaf7;
   border-bottom: 1px solid #ddd;
@@ -832,7 +867,6 @@ html {
   margin-right: 50px;
 }
 
-
 /* Style des liens de la barre */
 .sub-nav a {
   text-decoration: none;
@@ -840,7 +874,9 @@ html {
   font-weight: 500;
   padding: 6px 10px;
   border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .sub-nav a:hover {
