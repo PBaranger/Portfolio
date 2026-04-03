@@ -4,7 +4,60 @@
   <meta charset="UTF-8">
   <title>Sidebar scroll</title>
   <style>
-    
+    <style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 200vh;
+  }
+
+  /* Sidebar totalement transparente */
+  .sidebar {
+    position: fixed;
+    top: 50%;
+    right: -150px;
+    transform: translateY(-50%);
+    width: 140px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.visible {
+    right: 0;
+  }
+
+  .sidebar h3 {
+    margin: 0 0 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 18px 10px; /* ESPACEMENT VERTICAL PLUS GRAND */
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  /* Ligne séparatrice fine */
+  .sidebar a + a {
+    border-top: 1px solid #ccc;
+  }
+
+  .sidebar a:hover {
+    color: #000;
+    font-weight: 600;
+  }
+
+    /* Sections de contenu pour la démo */
+    section {
+      padding: 80px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
 
     /* Sections de contenu pour la démo */
     section {
