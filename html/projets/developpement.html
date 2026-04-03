@@ -56,6 +56,16 @@
     <!-- Contenu principal -->
 
     <main>
+      <div id="bareside"></div>
+
+<script>
+  fetch("../../test_bis.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("bareside").innerHTML = data;
+    });
+</script>
+
       <!-- Barre fixe de navigation interne -->
       <div class="sub-nav">
         <a href="#section-page-web">Page Web</a>
