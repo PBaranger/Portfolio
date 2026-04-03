@@ -54,6 +54,14 @@
     </header>
 
     <!-- Contenu principal -->
+     <div id="import"></div>
+<script>
+  fetch("../../test_bis.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("import").innerHTML = html;
+    });
+</script>
 
     <main>
       
@@ -65,14 +73,7 @@
     });
 </script>-->
 
-      <div id="import"></div>
-<script>
-  fetch("../../test_bis.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("import").innerHTML = html;
-    });
-</script>
+     
 
 
       <!-- Barre fixe de navigation interne -->
