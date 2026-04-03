@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar scroll</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      min-height: 200vh; /* pour avoir de quoi scroller */
+    }
+
+    /* Sidebar à droite, cachée par défaut */
+    .sidebar {
+      position: fixed;
+      top: 50%;
+      right: -160px; /* en dehors de l'écran */
+      transform: translateY(-50%);
+      width: 150px;
+      background: #222;
+      color: #fff;
+      padding: 10px 0;
+      border-radius: 8px 0 0 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    /* Quand on ajoute la classe "visible", elle glisse dans l'écran */
+    .sidebar.visible {
+      right: 0;
+    }
+
+    .sidebar h3 {
+      margin: 0 0 8px;
+      padding: 0 12px;
+      font-size: 14px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 8px 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      background: #444;
+    }
+
+    /* Sections de contenu pour la démo */
+    section {
+      padding: 80px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="dev">
+    <h1>Section Dev</h1>
+    <p>Contenu pour la partie développement...</p>
+  </section>
+
+  <section id="jeux">
+    <h1>Section Jeux</h1>
+    <p>Contenu pour la partie jeux...</p>
+  </section>
+
+  <section id="appli">
+    <h1>Section Appli</h1>
+    <p>Contenu pour la partie applications...</p>
+  </section>
+
+  <!-- Sidebar de navigation -->
+  <nav class="sidebar" id="sidebar">
+    <h3>Navigation</h3>
+    <a href="#dev">Dev</a>
+    <a href="#jeux">Jeux</a>
+    <a href="#appli">Appli</a>
+  </nav>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+
+    window.addEventListener('scroll', () => {
+      // Quand on a scrollé de plus de 100px, on affiche la barre
+      if (window.scrollY > 100) {
+        sidebar.classList.add('visible');
+      } else {
+        sidebar.classList.remove('visible');
+      }
+    });
+  </script>
+
+</body>
+</html>
