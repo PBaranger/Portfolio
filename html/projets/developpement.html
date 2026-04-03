@@ -56,15 +56,24 @@
     <!-- Contenu principal -->
 
     <main>
-      <div id="bareside"></div>
-
-<script>
+      
+<!--<script>
   fetch("../../test_bis.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("bareside").innerHTML = data;
     });
+</script>-->
+
+      <div id="import"></div>
+<script>
+  fetch("../../test_bis.html")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("import").innerHTML = html;
+    });
 </script>
+
 
       <!-- Barre fixe de navigation interne -->
       <div class="sub-nav">
