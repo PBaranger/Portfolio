@@ -54,50 +54,15 @@
     </header>
 
     <!-- Contenu principal -->
-     <div id="import"></div>
-<script>
-  fetch("../../test_bis.html")
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById("import").innerHTML = html;
-    });
-</script>
+    <div id="import"></div>
 
     <main>
-      
-<!--<script>
-  fetch("../../test_bis.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("bareside").innerHTML = data;
-    });
-</script>-->
-
-     
-
-
       <!-- Barre fixe de navigation interne -->
-      <div class="sub-nav">
+      <!--<div class="sub-nav">
         <a href="#section-page-web">Page Web</a>
         <a href="#section-jeux">Jeux</a>
         <a href="#section-application">Application</a>
-      </div>
-
-      <!-- Exemple de sections avec ancres -->
-      <section id="section-page-web">
-        <h2>Page Web</h2>
-        <!-- ton contenu déjà existant "Réalisation d’un site Web" -->
-      </section>
-
-      <section id="secti1on-jeux">
-        <h2>Jeux</h2>
-        <!-- ton contenu "jeu vidéo textuel" -->
-      </section>
-
-      <section id="section-application">
-        <h2>Application</h2>
-        <!-- appli astro, IHM, etc. -->
-      </section>
+      </div>-->
 
       <h1 class="titre-page">Développement d’application et programmation</h1>
 
@@ -387,7 +352,7 @@
         </div>
       </div>
 
-      <hr id="site-php-1"/>
+      <hr id="site-php-1" />
 
       <!-- ### Développement d’une interface en PHP ### -->
       <div class="projets-bloc-texte-img">
@@ -428,6 +393,12 @@
         </div>
       </div>
     </main>
+
+    <nav class="sidebar" id="sidebar">
+      <a href="#section-page-web">Pages Web</a>
+      <a href="#section-jeux">Jeux</a>
+      <a href="#section-application">Applications</a>
+    </nav>
 
     <footer>
       <div class="footer-content">
@@ -484,5 +455,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../../js/modale.js"></script>
   </body>
 </html>
