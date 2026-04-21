@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const sidebar = document.getElementById('sidebar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            sidebar.classList.add('visible');
+        } else {
+            sidebar.classList.remove('visible');
+        }
+    });
+
+
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modal-title');
     const modalInfo = document.getElementById('modal-info');
