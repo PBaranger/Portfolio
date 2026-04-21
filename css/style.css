@@ -883,10 +883,11 @@ svg {
   box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
 }
 
-/*.form-group input:hover,
+.form-group input:hover,
 .form-group textarea:hover {
-  border-color: #7f9239;
-}*/
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+
+}
 
 html {
   scroll-behavior: smooth;
