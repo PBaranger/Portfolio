@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const backtop = document.getElementById('backtop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            backtop.classList.add('visible');
+        } else {
+            backtop.classList.remove('visible');
+        }
+    });
+
     const sidebar = document.getElementById('sidebar');
 
     window.addEventListener('scroll', () => {
