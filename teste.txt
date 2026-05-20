@@ -11,3 +11,4 @@ A faire :
 
 Fini :
 -> Vérifier l'agancement des img + agancement global
+- Page index.html + idex_en.html +  contact.html + contact_en.html + mentions_legales.html + mentions_legales_en.html
