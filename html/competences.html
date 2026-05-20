@@ -10,14 +10,17 @@
   <body>
     <!-- Inclusion du header -->
     <!--<iframe src="header.html"></iframe>-->
+    <a id="top"></a>
     <header>
       <div class="header-left">
-        <img
-          class="logo_header"
-          src="../img/logo_pb_sans_fond.png"
-          alt="Logo PB"
-        />
-        <h3>BARANGER Phoedora</h3>
+        <a href="../index.html" class="header-link">
+          <img
+            class="logo_header"
+            src="../img/logo_pb_sans_fond.png"
+            alt="Logo PB"
+          />
+          <h3>BARANGER Phoedora</h3>
+        </a>
       </div>
       <nav>
         <ul>
@@ -36,14 +39,30 @@
           </li>
           <li>
             <a href="../html/competences.html">Compétences</a>
-            <ul>
-              <li>
-                <a href="../html/competences/informatique.html">Informatique</a>
-              </li>
-              <li><a href="../html/competences/general.html">Général</a></li>
-            </ul>
           </li>
           <li><a href="../contact.html">Contact</a></li>
+          <li>
+            <a href=""
+              ><img
+                src="https://flagcdn.com/w20/fr.png"
+                alt="Français"
+                class="icon-drapeau"
+              />
+              Fr ▿</a
+            >
+            <ul>
+              <li>
+                <a href="../competences_en.html"
+                  ><img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="Anglais"
+                    class="icon-drapeau"
+                  />
+                  En</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -165,18 +184,14 @@
           </div>
 
           <div class="skill-card java">
-            
             <h3>Java</h3>
             <div class="bar"><div class="java">80%</div></div>
           </div>
 
           <div class="skill-card c">
-            
             <h3>C</h3>
             <div class="bar"><div class="c">80%</div></div>
           </div>
-
-          
         </div>
       </section>
 
@@ -236,20 +251,15 @@
             <div class="bar"><div class="javascript">70%</div></div>
           </div>
 
-           <div class="skill-card linux">
-            
+          <div class="skill-card linux">
             <h3>Linux</h3>
             <div class="bar"><div class="linux">80%</div></div>
           </div>
 
-
-           <div class="skill-card bash">
-            
+          <div class="skill-card bash">
             <h3>Bash</h3>
             <div class="bar"><div class="bash">80%</div></div>
           </div>
-
-          
         </div>
       </section>
 
@@ -262,6 +272,8 @@
         </div>
       </div>
     </main>
+
+    <a href="#top" id="backtop" class="backtop">↑</a>
 
     <footer>
       <div class="footer-content">
@@ -280,9 +292,9 @@
             </a>
 
             <a
-              href="https://gitlab.com/votre-username"
+              href="https://gitlab.com/PBaranger "
               target="_blank"
-              aria-label="LinkeIn"
+              aria-label="GitLab"
             >
               <img
                 src="../img/logo_gitlab_color.svg"
@@ -297,26 +309,17 @@
               aria-label="LinkedIn"
             >
               <img
-                src="../img/logo_linkedin_color.svg"
+                src="../img/logo_linkedin_nb.svg"
                 class="social-icon"
                 alt="LinkeIn logo"
               />
             </a>
-
-            <a
-              href="https://ecv.jrcan.dev/phoedorabaranger/"
-              target="_blank"
-              aria-label="WordPress"
-            >
-              <img
-                src="../img/logo_wordpress.svg"
-                class="social-icon"
-                alt="Wordpress logo"
-              />
-            </a>
           </div>
         </div>
+        <a href="../mentions_legales.html">Mentions légales</a>
       </div>
     </footer>
+
+    <script src="../js/modale.js"></script>
   </body>
 </html>
