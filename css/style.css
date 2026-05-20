@@ -1,5 +1,16 @@
 /* ### STYLE GLOBAL DE LA PAGE ### */
 
+/* @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
 html,
 body {
   margin: 0;
@@ -13,6 +24,7 @@ body {
 main {
   padding: 40px 20px;
   /* margin-top: 5%; */
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 hr {
@@ -39,6 +51,10 @@ h1::after {
   border-radius: 2px;
 }
 
+p {
+  text-align: justify;
+}
+
 /* ### STYLE DU HEADER ### */
 header {
   display: flex;
@@ -56,6 +72,14 @@ header {
 .header-left {
   display: flex;
   align-items: center;
+}
+
+.header-left a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo_header {
@@ -145,7 +169,7 @@ nav ul li ul {
   position: absolute;
   top: 120%;
   left: 0;
-  background-color: #2c2c44;
+  background-color: #2c2c44f3;
   border-radius: 5px;
   flex-direction: column;
   min-width: 160px;
@@ -183,6 +207,11 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+.footer-content a:hover {
+  transform: translateY(-0.5px) scale(1.03);
+  /* font-weight: bold; */
 }
 
 .footer-right {
@@ -230,6 +259,7 @@ footer a {
   position: relative;
   margin-bottom: 3rem;
   color: #2c3e50;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .parcours-titre::after {
@@ -252,7 +282,7 @@ footer a {
   max-width: 76%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
-  animation: fadeInUp 0.8s ease forwards;
+  /* animation: fadeInUp 0.8s ease forwards; */
   background: white;
   gap: 40px;
 }
@@ -449,7 +479,7 @@ footer a {
   margin: 20px auto;
   max-width: 78%;
   margin-top: 50px;
-  animation: fadeInUp 0.8s ease forwards;
+  /* animation: fadeInUp 0.8s ease forwards; */
   background: white;
 }
 
@@ -886,6 +916,7 @@ svg {
 .form-group input:hover,
 .form-group textarea:hover {
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  border-color: #aec363;
 
 }
 
@@ -893,7 +924,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.back-to-top {
+.backtop{
+  display: none;
+}
+
+.backtop.visible {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -916,7 +951,7 @@ html {
     transform 0.2s;
 }
 
-.back-to-top:hover {
+.backtop:hover {
   opacity: 1;
   transform: scale(1.05);
 }
