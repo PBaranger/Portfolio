@@ -1,1 +1,205 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Phoedora Baranger</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .category h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+        .skill-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skill-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-top: 10px;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.5s ease;
+        }
+
+        /* Couleurs des barres de progression */
+        .html-css { background-color: #e34f26; }
+        .php { background-color: #777bb4; }
+        .python { background-color: #3776ab; }
+        .cisco { background-color: #1ba0d7; }
+        .java { background-color: #f89820; }
+        .c { background-color: #00599c; }
+        .reseau { background-color: #6c5ce7; }
+        .equipe { background-color: #fd79a8; }
+    </style>
+</head>
+<body>
+    <h1>Mes Compétences</h1>
+
+    <!-- Catégorie Développement -->
+    <div class="category">
+        <h2>Développement</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML/CSS" class="skill-icon">
+                    <span class="skill-name">HTML / CSS</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar html-css" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon">
+                    <span class="skill-name">PHP</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar php" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar python" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar java" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
+                    <span class="skill-name">C</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar c" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catégorie Réseaux -->
+    <div class="category">
+        <h2>Réseaux</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg" alt="Cisco" class="skill-icon">
+                    <span class="skill-name">Cisco (Packet Tracer)</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar cisco" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/server.png" alt="Configuration réseau" class="skill-icon" style="filter: invert(1);">
+                    <span class="skill-name">Configuration réseau</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar reseau" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catégorie Autres -->
+    <div class="category">
+        <h2>Autres Compétences</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/teamwork.png" alt="Travail d'équipe" class="skill-icon" style="filter: invert(1);">
+                    <span class="skill-name">Travail d'équipe</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar equipe" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="skill-icon">
+                    <span class="skill-name">Linux</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar python" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
