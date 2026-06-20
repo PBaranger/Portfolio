@@ -24,7 +24,7 @@ body {
 main {
   padding: 40px 20px;
   /* margin-top: 5%; */
-    animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 hr {
@@ -277,7 +277,7 @@ footer a {
   align-items: center;
   border-radius: 15px;
   padding: 26px;
-  padding-left : 60px;
+  padding-left: 60px;
   margin: 20px auto;
   max-width: 76%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -439,8 +439,9 @@ footer a {
   font-size: 0.85em;
 }
 
-.projet-card h3{
-  color: #7f9239;}
+.projet-card h3 {
+  color: #7f9239;
+}
 
 /* Bouton */
 .btn-projet {
@@ -580,10 +581,12 @@ section {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: calc(33.333% - 7%);
+  /* width: calc(33.333% - 7%); */
+  width: calc(20% - 17px);
   padding: 8px 20px 30px 20px;
   box-sizing: border-box;
   transition: transform 0.3s ease;
+  margin-bottom: 50px;
 }
 
 .skill-card h3 {
@@ -595,6 +598,13 @@ section {
 .skill-card:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.skill-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 45px;
+  height: auto;
 }
 
 svg {
@@ -714,69 +724,215 @@ svg {
   text-align: center;
 }
 
-.html {
+.html_bar {
   width: 80%;
-  background-color: rgb(230, 126, 34);
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: bold;
-}
-.html1 {
-  background-color: rgb(230, 126, 34, 0.25);
-}
-
-.php {
-  width: 80%;
-  background-color: rgb(138, 43, 226);
-  border-radius: 5px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.php1 {
-  background-color: rgb(138, 43, 226, 0.25);
-}
-
-.python {
-  width: 85%;
   background-color: rgb(30, 180, 125);
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
 }
-.python1 {
+.html_carte {
   background-color: rgb(30, 180, 125, 0.25);
 }
 
-.cisco {
-  width: 50%;
+.php_bar {
+  width: 75%;
+  background-color: rgb(30, 180, 125);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.php_carte {
+  background-color: rgb(30, 180, 125, 0.25);
+}
+
+.python_bar {
+  width: 70%;
+  background-color: rgb(30, 180, 125);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.python_carte {
+  background-color: rgb(30, 180, 125, 0.25);
+}
+
+.java_bar {
+  width: 65%;
+  background-color: rgb(30, 180, 125);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.java_carte {
+  background-color: rgb(30, 180, 125, 0.25);
+}
+
+.c_bar {
+  width: 68%;
+  background-color: rgb(30, 180, 125);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.c_carte {
+  background-color: rgb(30, 180, 125, 0.25);
+}
+
+.cpp_bar {
+  width: 55%;
+  background-color: rgb(30, 180, 125);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.cpp_carte {
+  background-color: rgb(30, 180, 125, 0.25);
+}
+
+.postgresql_bar {
+  width: 70%;
+  background-color: rgb(154, 42, 214);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.postgresql_carte {
+  background-color: rgb(154, 42, 214, 0.25);
+}
+
+.mysql_bar {
+  width: 60%;
+  background-color: rgb(154, 42, 214);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.mysql_carte {
+  background-color: rgb(154, 42, 214, 0.25);
+}
+
+.bash_bar {
+  width: 68%;
+  background-color: rgb(30, 158, 180);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bash_carte {
+  background-color: rgb(30, 158, 180, 0.25);
+}
+
+.powershell_bar {
+  width: 65%;
+  background-color: rgb(30, 158, 180);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.powershell_carte {
+  background-color: rgb(30, 158, 180, 0.25);
+}
+
+.git_bar {
+  width: 72%;
+  background-color: rgb(230, 126, 34);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.git_carte {
+  background-color: rgb(230, 126, 34, 0.25);
+}
+
+.cisco_bar {
+  width: 70%;
   background-color: rgb(2, 142, 217);
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
 }
 
-.cisco1 {
+.cisco_carte {
   background-color: rgb(2, 142, 217, 0.25);
 }
 
-.reseau {
-  width: 80%;
-  background-color: #273c75;
+.reseau_bar {
+  width: 74%;
+  background-color: rgb(39, 60, 117);
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
 }
-.reseau1 {
-  background-color: rgba(138, 43, 226, 0.3);
+.reseau_carte {
+  background-color: rgba(138, 43, 226, 0.25);
 }
 
-.manipulation {
-  width: 70%;
-  background-color: #718093;
+.manipulation_bar {
+  width: 80%;
+  background-color: rgb(39, 60, 117);
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
+}
+.manipulation_carte {
+  background-color: rgba(138, 43, 226, 0.25);
+}
+
+.linux_bar {
+  width: 62%;
+  background-color: rgb(238, 205, 41);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.linux_carte {
+  background-color: rgba(238, 205, 41, 0.25);
+}
+
+.windows_bar {
+  width: 64%;
+  background-color: rgb(238, 205, 41);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.windows_carte {
+  background-color: rgba(238, 205, 41, 0.25);
+}
+
+.travail_equipe_bar {
+  width: 84%;
+  background-color: rgb(241, 54, 54);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.travail_equipe_carte {
+  background-color: rgba(241, 54, 54, 0.25);
+}
+
+.autonomie_bar {
+  width: 72%;
+  background-color: rgb(241, 54, 54);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.autonomie_carte {
+  background-color: rgba(241, 54, 54, 0.25);
+}
+
+.communication_bar {
+  width: 62%;
+  background-color: rgb(241, 54, 54);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.communication_carte {
+  background-color: rgba(241, 54, 54, 0.25);
 }
 
 .projets-buttons-container {
@@ -917,14 +1073,13 @@ svg {
 .form-group textarea:hover {
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
   border-color: #aec363;
-
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.backtop{
+.backtop {
   display: none;
 }
 
